@@ -1,3 +1,3 @@
-public class insertSL extends SkipList {
+public class containsSL extends SkipList {
 
 }

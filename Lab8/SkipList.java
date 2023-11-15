@@ -1,5 +1,6 @@
 package Lab8;
 
+import java.util.Iterator;
 
 public abstract class SkipList<T extends Comparable<T>> {
     /** Static class to contain the data and the links */
@@ -12,9 +13,9 @@ public abstract class SkipList<T extends Comparable<T>> {
             this.forward = (SkipListNode<T>[]) new SkipListNode[level];
         }
     }
-    private static final int MAX_LEVEL = 3; // Number of levels in the skip list
-    private int level; // Current level of the skip list
-    private SkipListNode<T> header; // Header node
+    protected static final int MAX_LEVEL = 3; // Number of levels in the skip list
+    protected int level; // Current level of the skip list
+    protected SkipListNode<T> header; // Header node
 
     public SkipList() {
         this.level = 1;

@@ -54,7 +54,7 @@ public class intertSL extends SkipList {
 		Random rand = new Random();
 		int r = rand.nextInt(maxCap);
 		int k = (int) (Math.log(r+1) / Math.log(2));
-		if(k > super.MAX_LEVEL) {
+		if(k > super.MAX_LEVEL -1) {
 			k = MAX_LEVEL - 1;
 		}
 		return MAX_LEVEL - k;
